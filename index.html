@@ -1,0 +1,363 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>닥터베닛 Dr.Benit 공식 브랜드 사이트</title><meta name="description" content="식약처 인정 원료·국내 HACCP 제조 건강기능식품 15종. 관절·두뇌·장·간·다이어트·수면·구강.">
+<meta property="og:title" content="닥터베닛 Dr.Benit 공식 브랜드 사이트"><meta property="og:description" content="식약처 인정 원료·국내 HACCP 제조 건강기능식품 15종. 관절·두뇌·장·간·다이어트·수면·구강."><meta property="og:image" content="brand/hero_blue.jpg">
+<link rel="icon" href="assets/images/favicon.svg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/styles.css"><link rel="stylesheet" href="assets/css/custom.css">
+<script>window.DB_ROOT="";</script><script src="assets/js/products.js"></script><script src="assets/js/cart.js"></script></head>
+<body class="font-manrope text-gray-txt bg-white">
+<!-- Utility bar (한국 쇼핑몰 관례) -->
+<div class="bg-gray-lighter border-b border-gray-line text-sm">
+  <div class="container mx-auto flex justify-between items-center py-2">
+    <p class="truncate"><i class="fas fa-truck text-primary mr-1"></i> 전 제품 무료배송 · 국내 HACCP 제조 · 공식몰 오픈</p>
+    <ul class="hidden md:flex space-x-4">
+      <li><a href="orders.html" class="hover:text-primary">주문조회</a></li>
+      <li><a href="cart.html" class="hover:text-primary">장바구니</a></li>
+      <li><a href="faq.html" class="hover:text-primary">고객센터</a></li>
+      <li><a href="contact.html" class="hover:text-primary">파트너 문의</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Header -->
+<header class="bg-white sticky top-0 z-50 shadow-sm">
+  <div class="container mx-auto flex justify-between items-center py-4 gap-4">
+    <a href="index.html" class="flex items-center shrink-0">
+      <span class="brand-en text-2xl font-bold text-primary tracking-tight">Dr.Benit</span><span class="ml-2 text-xl font-extrabold text-black">닥터베닛</span>
+    </a>
+    <div class="flex lg:hidden items-center gap-4"><a href="cart.html" class="relative text-black"><i class="fas fa-shopping-cart text-xl"></i><span data-cart-badge class="absolute -top-2 -right-3 bg-primary text-white text-[10px] font-bold rounded-full px-1.5 py-0.5 hidden">0</span></a><button id="hamburger" class="text-black focus:outline-none"><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+    <form class="hidden lg:flex flex-grow max-w-xl mx-auto" action="shop.html" method="get">
+      <input type="text" name="q" class="w-full p-3 border border-primary rounded-l-full pl-5 focus:outline-none" placeholder="상품명으로 검색 (예: 알부민, 콘드로이친)">
+      <button class="bg-primary text-white px-5 rounded-r-full font-semibold" type="submit"><i class="fas fa-search"></i></button>
+    </form>
+    <div class="hidden lg:flex items-center space-x-5 shrink-0">
+      <a href="orders.html" class="text-center text-xs hover:text-primary"><i class="far fa-user text-xl block mb-1"></i>주문조회</a>
+      <div class="relative group cart-wrapper">
+        <a href="cart.html" class="text-center text-xs hover:text-primary block relative"><i class="fas fa-shopping-cart text-xl block mb-1"></i>장바구니<span data-cart-badge class="absolute -top-2 -right-3 bg-primary text-white text-[10px] font-bold rounded-full px-1.5 py-0.5 hidden">0</span></a>
+        <div class="absolute right-0 mt-1 w-80 bg-white shadow-lg p-4 rounded hidden group-hover:block text-sm" data-cart-mini></div>
+      </div>
+      <a href="shop.html" class="bg-primary border border-primary hover:bg-transparent text-white hover:text-primary font-semibold px-4 py-2 rounded-full inline-block">전체상품</a>
+    </div>
+  </div>
+  <!-- Category bar -->
+  <nav class="hidden lg:block border-t border-gray-line">
+    <div class="container mx-auto">
+      <ul class="flex justify-start space-x-8 text-black">
+        <li><a href="shop.html" class="block py-3 font-bold text-primary whitespace-nowrap"><i class="fas fa-bars mr-2"></i>전체상품</a></li>
+        <li><a href="shop.html#joint" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">관절·연골</a></li><li><a href="shop.html#brain" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">두뇌·인지</a></li><li><a href="shop.html#oral" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">구강</a></li><li><a href="shop.html#gut" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">장·소화</a></li><li><a href="shop.html#liver" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">간·활력</a></li><li><a href="shop.html#diet" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">다이어트</a></li><li><a href="shop.html#sleep" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">수면·스트레스</a></li><li><a href="shop.html#etc" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">항산화·면역</a></li>
+        <li class="ml-auto"><a href="index.html#event" class="block py-3 font-semibold hover:text-primary">이벤트</a></li>
+        <li><a href="index.html#notice" class="block py-3 font-semibold hover:text-primary">공지사항</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- Mobile menu -->
+<nav id="mobile-menu-placeholder" class="mobile-menu hidden flex flex-col items-center space-y-8 lg:hidden">
+  <ul class="w-full">
+    <li><a href="index.html" class="font-bold block py-2">홈</a></li>
+    <li><a href="shop.html" class="font-bold block py-2">전체상품</a></li>
+    <li><a href="shop.html#joint" class="font-bold block py-2">관절·연골</a></li><li><a href="shop.html#brain" class="font-bold block py-2">두뇌·인지</a></li><li><a href="shop.html#oral" class="font-bold block py-2">구강</a></li><li><a href="shop.html#gut" class="font-bold block py-2">장·소화</a></li><li><a href="shop.html#liver" class="font-bold block py-2">간·활력</a></li><li><a href="shop.html#diet" class="font-bold block py-2">다이어트</a></li><li><a href="shop.html#sleep" class="font-bold block py-2">수면·스트레스</a></li><li><a href="shop.html#etc" class="font-bold block py-2">항산화·면역</a></li>
+    <li><a href="faq.html" class="font-bold block py-2">고객센터 · FAQ</a></li>
+    <li><a href="contact.html" class="font-bold block py-2">파트너 문의</a></li>
+  </ul>
+  <div class="flex flex-col mt-6 space-y-2 items-center">
+    <a href="cart.html" class="bg-primary text-white border border-primary font-semibold px-4 py-2 rounded-full inline-block min-w-[160px] text-center">장바구니 <span data-cart-badge class="ml-1 bg-white text-primary rounded-full px-2 text-xs hidden">0</span></a>
+    <a href="orders.html" class="border border-primary text-primary font-semibold px-4 py-2 rounded-full inline-block min-w-[160px] text-center">주문조회</a>
+  </div>
+  <form class="w-full flex" action="shop.html" method="get"><input type="text" name="q" class="w-full p-2 border border-gray-line rounded-l" placeholder="상품 검색"><button class="bg-primary text-white px-4 rounded-r"><i class="fas fa-search"></i></button></form>
+</nav>
+<section id="product-slider"><div class="main-slider swiper-container"><div class="swiper-wrapper"><div class="swiper-slide light"><img src="brand/prodPS.jpg" alt=""><div class="swiper-slide-content"><h2 class="text-3xl md:text-6xl font-bold text-black mb-2 md:mb-4">또렷한 하루,<br>두뇌엔 포스파티딜세린</h2><p class="mb-4 text-gray-txt md:text-xl">노화로 인한 인지력 개선 · 식약처 인정 기능성 원료 PS 300</p><a href="products/16027977036.html" class="bg-primary hover:bg-transparent text-white hover:text-primary border border-transparent hover:border-primary font-semibold px-5 py-2 rounded-full inline-block">두뇌엔 PS 보기</a></div></div><div class="swiper-slide light"><img src="brand/prodMel.jpg" alt=""><div class="swiper-slide-content"><h2 class="text-3xl md:text-6xl font-bold text-black mb-2 md:mb-4">편안한 밤,<br>식물성 멜라토닌</h2><p class="mb-4 text-gray-txt md:text-xl">코지 식물성 멜라토닌 2mg + 마그네슘 · 전 제품 무료배송</p><a href="products/15870507124.html" class="bg-primary hover:bg-transparent text-white hover:text-primary border border-transparent hover:border-primary font-semibold px-5 py-2 rounded-full inline-block">멜라토닌 보기</a></div></div><div class="swiper-slide light"><img src="brand/prod2.jpg" alt=""><div class="swiper-slide-content"><h2 class="text-3xl md:text-6xl font-bold text-black mb-2 md:mb-4">관절은 콘드로이친,<br>철갑상어 1200</h2><p class="mb-4 text-gray-txt md:text-xl">철갑상어 콘드로이친 1200 MBP · ★ 4.9 (1,043)</p><a href="products/16164586175.html" class="bg-primary hover:bg-transparent text-white hover:text-primary border border-transparent hover:border-primary font-semibold px-5 py-2 rounded-full inline-block">콘드로이친 보기</a></div></div><div class="swiper-slide"><img src="brand/hero_blue.jpg" alt=""><div class="swiper-slide-content"><h2 class="text-3xl md:text-6xl font-bold text-white drop-shadow mb-2 md:mb-4">BEST 1 마시는 알부민 영양제 식약처인증 10</h2><p class="mb-4 text-white drop-shadow md:text-xl">최근 30일 1,569개 판매 · ★ 4.4 (5,124)</p><a href="products/15826882635.html" class="bg-primary hover:bg-transparent text-white hover:text-primary border border-transparent hover:border-primary font-semibold px-5 py-2 rounded-full inline-block">지금 구매하기</a></div></div><div class="swiper-slide"><img src="brand/sea.jpg" alt=""><div class="swiper-slide-content"><h2 class="text-3xl md:text-6xl font-bold text-white drop-shadow mb-2 md:mb-4">유통 · 수출 · B2B 파트너 모집</h2><p class="mb-4 text-white drop-shadow md:text-xl">카탈로그와 인증 서류를 보내드립니다</p><a href="contact.html" class="bg-primary hover:bg-transparent text-white hover:text-primary border border-transparent hover:border-primary font-semibold px-5 py-2 rounded-full inline-block">파트너 문의</a></div></div></div></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></section>
+<section class="border-b border-gray-line bg-white"><div class="container mx-auto py-6 flex justify-center gap-4 overflow-x-auto"><a href="shop.html#joint" class="flex flex-col items-center w-24 shrink-0 group"><span class="w-16 h-16 rounded-full bg-gray-lighter overflow-hidden mb-2 border border-gray-line group-hover:border-primary"><img src="img/16164586175/img_00_representation.jpg" class="w-full h-full object-cover mix-blend-multiply" alt=""></span><span class="text-sm font-semibold text-black text-center">관절·연골</span></a><a href="shop.html#brain" class="flex flex-col items-center w-24 shrink-0 group"><span class="w-16 h-16 rounded-full bg-gray-lighter overflow-hidden mb-2 border border-gray-line group-hover:border-primary"><img src="img/16027977036/img_00_representation.jpg" class="w-full h-full object-cover mix-blend-multiply" alt=""></span><span class="text-sm font-semibold text-black text-center">두뇌·인지</span></a><a href="shop.html#oral" class="flex flex-col items-center w-24 shrink-0 group"><span class="w-16 h-16 rounded-full bg-gray-lighter overflow-hidden mb-2 border border-gray-line group-hover:border-primary"><img src="img/15973374667/img_00_representation.jpg" class="w-full h-full object-cover mix-blend-multiply" alt=""></span><span class="text-sm font-semibold text-black text-center">구강</span></a><a href="shop.html#gut" class="flex flex-col items-center w-24 shrink-0 group"><span class="w-16 h-16 rounded-full bg-gray-lighter overflow-hidden mb-2 border border-gray-line group-hover:border-primary"><img src="img/16008855244/img_00_representation.jpg" class="w-full h-full object-cover mix-blend-multiply" alt=""></span><span class="text-sm font-semibold text-black text-center">장·소화</span></a><a href="shop.html#liver" class="flex flex-col items-center w-24 shrink-0 group"><span class="w-16 h-16 rounded-full bg-gray-lighter overflow-hidden mb-2 border border-gray-line group-hover:border-primary"><img src="img/15826882635/img_00_representation.jpg" class="w-full h-full object-cover mix-blend-multiply" alt=""></span><span class="text-sm font-semibold text-black text-center">간·활력</span></a><a href="shop.html#diet" class="flex flex-col items-center w-24 shrink-0 group"><span class="w-16 h-16 rounded-full bg-gray-lighter overflow-hidden mb-2 border border-gray-line group-hover:border-primary"><img src="img/16330209884/img_00_representation.jpg" class="w-full h-full object-cover mix-blend-multiply" alt=""></span><span class="text-sm font-semibold text-black text-center">다이어트</span></a><a href="shop.html#sleep" class="flex flex-col items-center w-24 shrink-0 group"><span class="w-16 h-16 rounded-full bg-gray-lighter overflow-hidden mb-2 border border-gray-line group-hover:border-primary"><img src="img/15870507124/img_00_representation.jpg" class="w-full h-full object-cover mix-blend-multiply" alt=""></span><span class="text-sm font-semibold text-black text-center">수면·스트레스</span></a><a href="shop.html#etc" class="flex flex-col items-center w-24 shrink-0 group"><span class="w-16 h-16 rounded-full bg-gray-lighter overflow-hidden mb-2 border border-gray-line group-hover:border-primary"><img src="img/15998210300/img_00_representation.jpg" class="w-full h-full object-cover mix-blend-multiply" alt=""></span><span class="text-sm font-semibold text-black text-center">항산화·면역</span></a></div></section>
+<section id="product-banners"><div class="container mx-auto py-10"><div class="flex flex-wrap -mx-4"><div class="w-full sm:w-1/3 px-4 mb-8"><a href="shop.html#joint" class="category-banner relative overflow-hidden rounded-lg shadow-lg group block bg-gray-lighter"><img src="img/16164586175/img_00_representation.jpg" alt="관절·연골" class="w-full aspect-[4/3] object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500"><div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent text-white"><h2 class="text-2xl font-bold">관절·연골</h2><p class="text-sm opacity-90 mb-3">콘드로이친·MBP 관절 연골 케어</p><span class="bg-primary text-white font-semibold px-4 py-1.5 rounded-full inline-block text-sm">보러가기</span></div></a></div><div class="w-full sm:w-1/3 px-4 mb-8"><a href="shop.html#brain" class="category-banner relative overflow-hidden rounded-lg shadow-lg group block bg-gray-lighter"><img src="img/16027977036/img_00_representation.jpg" alt="두뇌·인지" class="w-full aspect-[4/3] object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500"><div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent text-white"><h2 class="text-2xl font-bold">두뇌·인지</h2><p class="text-sm opacity-90 mb-3">포스파티딜세린 기억력·인지력</p><span class="bg-primary text-white font-semibold px-4 py-1.5 rounded-full inline-block text-sm">보러가기</span></div></a></div><div class="w-full sm:w-1/3 px-4 mb-8"><a href="shop.html#oral" class="category-banner relative overflow-hidden rounded-lg shadow-lg group block bg-gray-lighter"><img src="img/15973374667/img_00_representation.jpg" alt="구강" class="w-full aspect-[4/3] object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500"><div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent text-white"><h2 class="text-2xl font-bold">구강</h2><p class="text-sm opacity-90 mb-3">구강유산균 잇몸·입냄새</p><span class="bg-primary text-white font-semibold px-4 py-1.5 rounded-full inline-block text-sm">보러가기</span></div></a></div></div></div></section>
+<section id="popular-products" class="bg-gray-lighter"><div class="container mx-auto py-10"><div class="flex items-end justify-between mb-8 px-4"><div><h2 class="text-3xl font-bold text-black" id="best">BEST ITEM</h2><p class="text-sm mt-1">최근 30일 판매량 기준 · 총 8,382개 판매</p></div><a href="shop.html" class="text-primary font-semibold">전체보기 →</a></div><div class="flex flex-wrap -mx-4"><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/15826882635.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><span class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded">BEST 1</span><img src="img/15826882635/img_00_representation.jpg" alt="마시는 알부민 영양제 식약처인증 100% 고함량 30p" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">식약처인증 · 100%</p>
+    <a href="products/15826882635.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">마시는 알부민 영양제 식약처인증 100% 고함량 30p</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">23,980원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★</span><span class="text-gray-line">★</span> <b class="text-black">4.4</b> (5,124)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 1,569개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('15826882635',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/15826882635.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/16330209884.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><span class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded">BEST 2</span><span class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">20%</span><img src="img/16330209884/img_00_representation.jpg" alt="닥터베닛 파라다이스 그레인 버닝 6파라돌 정품" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">정품</p>
+    <a href="products/16330209884.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">닥터베닛 파라다이스 그레인 버닝 6파라돌 정품</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">64,200원</span><span class="text-sm line-through ml-2">80,460원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">5.0</b> (341)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 1,567개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('16330209884',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/16330209884.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/16008855244.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><span class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded">BEST 3</span><img src="img/16008855244/img_00_representation.jpg" alt="쾌변엔 프리미엄 차전자피 식이섬유" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">프리미엄</p>
+    <a href="products/16008855244.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">쾌변엔 프리미엄 차전자피 식이섬유</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">32,200원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">4.6</b> (878)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 1,208개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('16008855244',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/16008855244.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/16164586175.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><span class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">17%</span><img src="img/16164586175/img_00_representation.jpg" alt="철갑상어 콘드로로이친 1200 MBP 식약청 HACCP 닥터베닛" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">HACCP</p>
+    <a href="products/16164586175.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">철갑상어 콘드로로이친 1200 MBP 식약청 HACCP 닥터베닛</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">28,200원</span><span class="text-sm line-through ml-2">33,780원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">4.9</b> (1,043)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 926개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('16164586175',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/16164586175.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/16027977036.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/16027977036/img_00_representation.jpg" alt="인지력 두뇌엔 포스파티딜세린 PS 300 맥스" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">두뇌·인지</p>
+    <a href="products/16027977036.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">인지력 두뇌엔 포스파티딜세린 PS 300 맥스</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">31,740원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">4.7</b> (1,187)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 904개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('16027977036',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/16027977036.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/15998210300.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/15998210300/img_00_representation.jpg" alt="파이토 대마종자유 식약처인증 1000 냉압착 대자종자씨유100%" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">식약처인증 · 100%</p>
+    <a href="products/15998210300.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">파이토 대마종자유 식약처인증 1000 냉압착 대자종자씨유100%</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">33,220원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">4.7</b> (889)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 820개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('15998210300',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/15998210300.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/15793243425.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/15793243425/img_00_representation.jpg" alt="제로컷 알파CD 분말 식약처인증 100% HACCP 알파시클로덱스트린 알파시디 알파씨디 파인애플 맛" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">식약처인증 · HACCP</p>
+    <a href="products/15793243425.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">제로컷 알파CD 분말 식약처인증 100% HACCP 알파시클로덱스트린 알파시디 알파씨디 파인애플 맛</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">37,900원</span><span class="text-sm line-through ml-2">40,960원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★</span><span class="text-gray-line">★</span> <b class="text-black">4.4</b> (2,010)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 759개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('15793243425',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/15793243425.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/16314721426.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/16314721426/img_00_representation.jpg" alt="국산 삼백초 추출물 100% 정품 HACCP 식약청인증" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">식약처인증 · HACCP</p>
+    <a href="products/16314721426.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">국산 삼백초 추출물 100% 정품 HACCP 식약청인증</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">31,900원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">5.0</b> (204)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 421개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('16314721426',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/16314721426.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div></div></div></section>
+<section id="event" class="py-10"><div class="container mx-auto"><div class="flex flex-wrap -mx-4">
+  <div class="w-full lg:w-1/2 px-4 mb-6"><a href="products/15826882635.html" class="flex items-center bg-primary text-white rounded-lg p-8 h-full"><div class="w-1/2"><span class="text-xs font-bold tracking-widest opacity-80">EVENT</span><h3 class="text-2xl font-bold mt-2 mb-2">BEST 1 마시는 알부민 영양제 식약처인증 100%</h3><p class="text-sm opacity-90 mb-4">최근 30일 1,569개 판매 · 무료배송</p><span class="bg-white text-primary font-semibold px-4 py-2 rounded-full inline-block text-sm">지금 구매하기</span></div><img src="img/15826882635/img_00_representation.jpg" class="w-1/2 aspect-square object-cover rounded-lg" alt=""></a></div>
+  <div class="w-full lg:w-1/2 px-4 mb-6"><a href="contact.html" class="flex items-center bg-gray-lighter rounded-lg p-8 h-full border border-gray-line"><div class="w-1/2"><span class="text-xs font-bold tracking-widest text-primary">PARTNER</span><h3 class="text-2xl font-bold mt-2 mb-2 text-black">유통 · 수출 · B2B 파트너</h3><p class="text-sm mb-4">카탈로그 · HACCP · 기능성 원료 인증 서류 제공</p><span class="bg-primary text-white font-semibold px-4 py-2 rounded-full inline-block text-sm">문의하기</span></div><img src="brand/lab_crop.jpg" class="w-1/2 aspect-square object-cover rounded-lg" alt=""></a></div>
+</div></div></section>
+<section id="latest-products" class="py-6"><div class="container mx-auto"><div class="flex items-end justify-between mb-8 px-4"><div><h2 class="text-3xl font-bold text-black">전체상품</h2><p class="text-sm mt-1">15종 · 전 제품 무료배송</p></div><a href="shop.html" class="text-primary font-semibold">카테고리별 보기 →</a></div><div class="flex flex-wrap -mx-4"><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/15826882635.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><span class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded">BEST 1</span><img src="img/15826882635/img_00_representation.jpg" alt="마시는 알부민 영양제 식약처인증 100% 고함량 30p" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">식약처인증 · 100%</p>
+    <a href="products/15826882635.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">마시는 알부민 영양제 식약처인증 100% 고함량 30p</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">23,980원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★</span><span class="text-gray-line">★</span> <b class="text-black">4.4</b> (5,124)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 1,569개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('15826882635',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/15826882635.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/16330209884.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><span class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded">BEST 2</span><span class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">20%</span><img src="img/16330209884/img_00_representation.jpg" alt="닥터베닛 파라다이스 그레인 버닝 6파라돌 정품" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">정품</p>
+    <a href="products/16330209884.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">닥터베닛 파라다이스 그레인 버닝 6파라돌 정품</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">64,200원</span><span class="text-sm line-through ml-2">80,460원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">5.0</b> (341)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 1,567개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('16330209884',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/16330209884.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/16008855244.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><span class="absolute top-3 left-3 bg-primary text-white text-xs font-bold px-2 py-1 rounded">BEST 3</span><img src="img/16008855244/img_00_representation.jpg" alt="쾌변엔 프리미엄 차전자피 식이섬유" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">프리미엄</p>
+    <a href="products/16008855244.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">쾌변엔 프리미엄 차전자피 식이섬유</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">32,200원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">4.6</b> (878)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 1,208개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('16008855244',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/16008855244.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/16164586175.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><span class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">17%</span><img src="img/16164586175/img_00_representation.jpg" alt="철갑상어 콘드로로이친 1200 MBP 식약청 HACCP 닥터베닛" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">HACCP</p>
+    <a href="products/16164586175.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">철갑상어 콘드로로이친 1200 MBP 식약청 HACCP 닥터베닛</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">28,200원</span><span class="text-sm line-through ml-2">33,780원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">4.9</b> (1,043)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 926개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('16164586175',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/16164586175.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/16027977036.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/16027977036/img_00_representation.jpg" alt="인지력 두뇌엔 포스파티딜세린 PS 300 맥스" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">두뇌·인지</p>
+    <a href="products/16027977036.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">인지력 두뇌엔 포스파티딜세린 PS 300 맥스</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">31,740원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">4.7</b> (1,187)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 904개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('16027977036',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/16027977036.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/15998210300.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/15998210300/img_00_representation.jpg" alt="파이토 대마종자유 식약처인증 1000 냉압착 대자종자씨유100%" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">식약처인증 · 100%</p>
+    <a href="products/15998210300.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">파이토 대마종자유 식약처인증 1000 냉압착 대자종자씨유100%</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">33,220원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">4.7</b> (889)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 820개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('15998210300',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/15998210300.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/15793243425.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/15793243425/img_00_representation.jpg" alt="제로컷 알파CD 분말 식약처인증 100% HACCP 알파시클로덱스트린 알파시디 알파씨디 파인애플 맛" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">식약처인증 · HACCP</p>
+    <a href="products/15793243425.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">제로컷 알파CD 분말 식약처인증 100% HACCP 알파시클로덱스트린 알파시디 알파씨디 파인애플 맛</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">37,900원</span><span class="text-sm line-through ml-2">40,960원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★</span><span class="text-gray-line">★</span> <b class="text-black">4.4</b> (2,010)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 759개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('15793243425',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/15793243425.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/16314721426.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/16314721426/img_00_representation.jpg" alt="국산 삼백초 추출물 100% 정품 HACCP 식약청인증" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">식약처인증 · HACCP</p>
+    <a href="products/16314721426.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">국산 삼백초 추출물 100% 정품 HACCP 식약청인증</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">31,900원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">5.0</b> (204)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 421개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('16314721426',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/16314721426.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/16166274823.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/16166274823/img_00_representation.jpg" alt="파라다이스 그레인 버닝 맥스컷 HACCP 인증" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">HACCP</p>
+    <a href="products/16166274823.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">파라다이스 그레인 버닝 맥스컷 HACCP 인증</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">24,600원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">4.8</b> (320)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 116개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('16166274823',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/16166274823.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/16017704420.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/16017704420/img_00_representation.jpg" alt="원기원 명품 흑염소 진액 무항생제 흑염소 사용 국내산 자연방목형 흑염소즙" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">국내산 · 무항생제</p>
+    <a href="products/16017704420.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">원기원 명품 흑염소 진액 무항생제 흑염소 사용 국내산 자연방목형 흑염소즙</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">74,250원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">4.8</b> (100)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 52개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('16017704420',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/16017704420.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/15870507124.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/15870507124/img_00_representation.jpg" alt="코지 식물성 멜라토닌 2mg 함유 마그네슘 함유 식약청인증 HACCP" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">식약처인증 · HACCP</p>
+    <a href="products/15870507124.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">코지 식물성 멜라토닌 2mg 함유 마그네슘 함유 식약청인증 HACCP</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">15,730원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">5.0</b> (1)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 13개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('15870507124',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/15870507124.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/15948627293.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/15948627293/img_00_representation.jpg" alt="강황 수용성 리포좀 커큐민 골드플러스 식약처인증 100% HACCP" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">식약처인증 · HACCP</p>
+    <a href="products/15948627293.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">강황 수용성 리포좀 커큐민 골드플러스 식약처인증 100% HACCP</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">25,800원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">4.6</b> (30)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 12개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('15948627293',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/15948627293.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/15933331143.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/15933331143/img_00_representation.jpg" alt="알부민 골드 더블업 밀크씨슬 HACCP 100%" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">HACCP · 100%</p>
+    <a href="products/15933331143.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">알부민 골드 더블업 밀크씨슬 HACCP 100%</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">19,890원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★★</span><span class="text-gray-line"></span> <b class="text-black">4.7</b> (52)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 8개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('15933331143',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/15933331143.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/15973374667.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/15973374667/img_00_representation.jpg" alt="닥터베닛 덴마크 정품 프리미엄 구강유산균 츄어블정 민트맛" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">정품 · 프리미엄</p>
+    <a href="products/15973374667.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">닥터베닛 덴마크 정품 프리미엄 구강유산균 츄어블정 민트맛</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">26,760원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-gray-line">★★★★★</span> 리뷰 준비 중</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 6개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('15973374667',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/15973374667.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div><div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+  <div class="bg-white p-3 rounded-lg shadow-lg h-full flex flex-col">
+    <a href="products/15894216545.html" class="relative block bg-gray-lighter rounded-lg overflow-hidden mb-4"><img src="img/15894216545/img_00_representation.jpg" alt="소연골 콘드로이친 1200 MBP 맥스 식약처인증 HACCP" class="w-full aspect-square object-cover mix-blend-multiply hover:scale-105 transition-transform duration-500" loading="lazy"></a>
+    <p class="text-xs text-gray-txt mb-1">식약처인증 · HACCP</p>
+    <a href="products/15894216545.html" class="text-base font-semibold mb-2 text-black leading-snug line-clamp-2">소연골 콘드로이친 1200 MBP 맥스 식약처인증 HACCP</a>
+    <div class="flex items-center mb-1 mt-auto"><span class="text-lg font-bold text-primary">31,360원</span></div>
+    <p class="text-xs text-gray-txt mb-1"><span class="text-yellow-500">★★★★</span><span class="text-gray-line">★</span> <b class="text-black">4.5</b> (37)</p>
+    <p class="text-xs text-gray-txt mb-3">최근 30일 1개 판매 · 무료배송</p>
+    <div class="flex gap-2"><button type="button" onclick="DB.add('15894216545',0,1,true)" class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">장바구니</button><a href="products/15894216545.html" class="border border-gray-line hover:border-primary text-black hover:text-primary font-semibold py-2 px-3 rounded-full flex-1 text-center">상세보기</a></div>
+  </div>
+</div></div></div></section>
+<section id="brands" class="bg-white py-12 px-4 border-t border-gray-line"><div class="container mx-auto"><h2 class="text-2xl font-bold text-center text-black mb-8">닥터베닛이 지키는 기준</h2><div class="flex flex-wrap justify-center gap-4"><div class="flex items-center gap-3 bg-gray-lighter rounded-lg px-5 py-4 border border-gray-line"><i class="fas fa-certificate text-primary text-2xl"></i><div><p class="font-bold text-black">식약처 인정 원료</p><p class="text-xs">기능성·안전성 기준 충족</p></div></div><div class="flex items-center gap-3 bg-gray-lighter rounded-lg px-5 py-4 border border-gray-line"><i class="fas fa-industry text-primary text-2xl"></i><div><p class="font-bold text-black">국내 HACCP 제조</p><p class="text-xs">식품안전관리인증 시설</p></div></div><div class="flex items-center gap-3 bg-gray-lighter rounded-lg px-5 py-4 border border-gray-line"><i class="fas fa-truck text-primary text-2xl"></i><div><p class="font-bold text-black">전 제품 무료배송</p><p class="text-xs">입금 확인 후 1~2영업일 출고</p></div></div><div class="flex items-center gap-3 bg-gray-lighter rounded-lg px-5 py-4 border border-gray-line"><i class="fas fa-chart-line text-primary text-2xl"></i><div><p class="font-bold text-black">30일 8,382개 판매</p><p class="text-xs">쿠팡 실판매 집계</p></div></div><div class="flex items-center gap-3 bg-gray-lighter rounded-lg px-5 py-4 border border-gray-line"><i class="fas fa-tags text-primary text-2xl"></i><div><p class="font-bold text-black">옵션별 투명 가격</p><p class="text-xs">정가 · 할인가 표기</p></div></div></div></div></section>
+<section id="notice" class="py-10"><div class="container mx-auto"><div class="flex flex-wrap -mx-4">
+  <div class="w-full lg:w-1/2 px-4 mb-6"><h3 class="text-xl font-bold text-black mb-4">공지사항</h3><ul class="divide-y divide-gray-line border-t border-b border-gray-line"><li class="py-3 flex justify-between"><a href="index.html#notice" class="hover:text-primary">닥터베닛 브랜드 공식 사이트를 오픈했습니다.</a><span class="text-xs">2026.09.08</span></li><li class="py-3 flex justify-between"><a href="terms.html" class="hover:text-primary">무통장입금 주문 안내 — 입금 확인 후 1~2영업일 내 출고합니다.</a><span class="text-xs">2026.09.08</span></li><li class="py-3 flex justify-between"><a href="contact.html" class="hover:text-primary">유통·수출·B2B 파트너 문의를 받습니다.</a><span class="text-xs">2026.09.08</span></li></ul></div>
+  <div class="w-full lg:w-1/2 px-4 mb-6"><h3 class="text-xl font-bold text-black mb-4">고객센터</h3><div class="border border-gray-line rounded-lg p-6"><p class="text-3xl font-bold text-black">070-8919-3743</p><p class="text-sm mt-1">10:00 ~ 17:00 (점심 12:00 ~ 13:00) · 주말/공휴일 휴무</p><p class="text-sm mt-1">cs@thefuture-labs.com</p><div class="mt-4 flex gap-2"><a href="faq.html" class="bg-primary text-white font-semibold px-4 py-2 rounded-full text-sm">자주 묻는 질문</a><a href="orders.html" class="border border-primary text-primary font-semibold px-4 py-2 rounded-full text-sm">주문조회</a></div></div></div>
+</div></div></section>
+<footer class="border-t border-gray-line mt-10">
+  <div class="container mx-auto px-4 py-10">
+    <div class="flex flex-wrap -mx-4">
+      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+        <h3 class="text-lg font-semibold mb-4 text-black">카테고리</h3>
+        <ul><li class="mb-1"><a href="shop.html#joint" class="hover:text-primary">관절·연골</a></li><li class="mb-1"><a href="shop.html#brain" class="hover:text-primary">두뇌·인지</a></li><li class="mb-1"><a href="shop.html#oral" class="hover:text-primary">구강</a></li><li class="mb-1"><a href="shop.html#gut" class="hover:text-primary">장·소화</a></li><li class="mb-1"><a href="shop.html#liver" class="hover:text-primary">간·활력</a></li><li class="mb-1"><a href="shop.html#diet" class="hover:text-primary">다이어트</a></li><li class="mb-1"><a href="shop.html#sleep" class="hover:text-primary">수면·스트레스</a></li><li class="mb-1"><a href="shop.html#etc" class="hover:text-primary">항산화·면역</a></li></ul>
+      </div>
+      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+        <h3 class="text-lg font-semibold mb-4 text-black">고객 안내</h3>
+        <ul>
+          <li class="mb-1"><a href="faq.html" class="hover:text-primary">자주 묻는 질문</a></li>
+          <li class="mb-1"><a href="terms.html" class="hover:text-primary">배송 · 교환 · 반품 안내</a></li>
+          <li class="mb-1"><a href="orders.html" class="hover:text-primary">주문 조회</a></li>
+          <li class="mb-1"><a href="privacy.html" class="hover:text-primary">개인정보처리방침</a></li>
+          <li class="mb-1"><a href="contact.html" class="hover:text-primary">파트너 · B2B 문의</a></li>
+        </ul>
+      </div>
+      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+        <h3 class="text-lg font-semibold mb-4 text-black">고객센터</h3>
+        <p class="text-2xl font-bold text-black mb-1">070-8919-3743</p>
+        <p class="text-sm mb-2">10:00 ~ 17:00 (점심 12:00 ~ 13:00) · 주말/공휴일 휴무</p>
+        <p class="text-sm mb-4"><a href="mailto:cs@thefuture-labs.com" class="hover:text-primary">cs@thefuture-labs.com</a></p>
+        <h3 class="text-lg font-semibold mb-2 text-black">무통장입금 안내</h3>
+        <p class="text-sm">농협 <strong class="text-black">301-0324-8918-41</strong><br>예금주 : 주식회사 더퓨처랩스</p>
+      </div>
+      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+        <h3 class="text-lg font-semibold mb-4 text-black">SNS · 쇼핑</h3>
+        <ul>
+          <li class="flex items-center mb-2"><img src="assets/images/social_icons/instagram.svg" alt="" class="w-4 h-4 mr-2"><a href="https://www.instagram.com/" target="_blank" rel="noopener" class="hover:text-primary">Instagram</a></li>
+          <li class="flex items-center mb-2"><img src="assets/images/social_icons/youtube.svg" alt="" class="w-4 h-4 mr-2"><a href="https://www.youtube.com/" target="_blank" rel="noopener" class="hover:text-primary">YouTube</a></li>
+          <li class="flex items-center mb-2"><i class="fas fa-shopping-bag text-primary w-4 mr-2"></i><a href="https://www.coupang.com/np/search?q=%EB%8B%A5%ED%84%B0%EB%B2%A0%EB%8B%9B" target="_blank" rel="noopener" class="hover:text-primary">쿠팡에서도 판매 중</a></li>
+        </ul>
+        <h3 class="text-lg font-semibold mt-6 mb-2 text-black">교환 · 반품 주소</h3>
+        <p class="text-sm">경기 용인시 처인구 남사읍 당하로 121, 3층 더퓨처랩스</p>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-lighter border-t border-gray-line">
+    <div class="container mx-auto px-4 py-6 text-xs leading-relaxed">
+      <p class="font-semibold text-black mb-1">주식회사 더퓨처랩스</p>
+      <p>대표 김남영 · 주소 서울특별시 강남구 삼성로 422, 4층 (06185) · 사업자등록번호 406-87-02871 · 통신판매업신고 2023-서울강남-01555 · 개인정보보호책임자 김남영 (cs@thefuture-labs.com)</p>
+      <p class="mt-1">고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰의 구매안전 서비스를 이용하실 수 있습니다. 건강기능식품은 질병의 예방 및 치료를 위한 의약품이 아닙니다.</p>
+      <p class="mt-2">© 닥터베닛 · 주식회사 더퓨처랩스. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+<script src="assets/js/script.js"></script>
+</body></html>

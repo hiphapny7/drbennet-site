@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>모델 캐스팅 테스트 (내부용) — 닥터베닛</title><meta name="description" content="내부 캐스팅 테스트">
+<meta property="og:title" content="모델 캐스팅 테스트 (내부용) — 닥터베닛"><meta property="og:description" content="내부 캐스팅 테스트">
+<link rel="icon" href="assets/images/favicon.svg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/styles.css"><link rel="stylesheet" href="assets/css/custom.css">
+<script>window.DB_ROOT="";</script><script src="assets/js/products.js"></script><script src="assets/js/cart.js"></script></head>
+<body class="font-manrope text-gray-txt bg-white">
+<!-- Utility bar (한국 쇼핑몰 관례) -->
+<div class="bg-gray-lighter border-b border-gray-line text-sm">
+  <div class="container mx-auto flex justify-between items-center py-2">
+    <p class="truncate"><i class="fas fa-truck text-primary mr-1"></i> 전 제품 무료배송 · 국내 HACCP 제조 · 공식몰 오픈</p>
+    <ul class="hidden md:flex space-x-4">
+      <li><a href="orders.html" class="hover:text-primary">주문조회</a></li>
+      <li><a href="cart.html" class="hover:text-primary">장바구니</a></li>
+      <li><a href="faq.html" class="hover:text-primary">고객센터</a></li>
+      <li><a href="contact.html" class="hover:text-primary">파트너 문의</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Header -->
+<header class="bg-white sticky top-0 z-50 shadow-sm">
+  <div class="container mx-auto flex justify-between items-center py-4 gap-4">
+    <a href="index.html" class="flex items-center shrink-0">
+      <span class="brand-en text-2xl font-bold text-primary tracking-tight">Dr.Benit</span><span class="ml-2 text-xl font-extrabold text-black">닥터베닛</span>
+    </a>
+    <div class="flex lg:hidden items-center gap-4"><a href="cart.html" class="relative text-black"><i class="fas fa-shopping-cart text-xl"></i><span data-cart-badge class="absolute -top-2 -right-3 bg-primary text-white text-[10px] font-bold rounded-full px-1.5 py-0.5 hidden">0</span></a><button id="hamburger" class="text-black focus:outline-none"><svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+    <form class="hidden lg:flex flex-grow max-w-xl mx-auto" action="shop.html" method="get">
+      <input type="text" name="q" class="w-full p-3 border border-primary rounded-l-full pl-5 focus:outline-none" placeholder="상품명으로 검색 (예: 알부민, 콘드로이친)">
+      <button class="bg-primary text-white px-5 rounded-r-full font-semibold" type="submit"><i class="fas fa-search"></i></button>
+    </form>
+    <div class="hidden lg:flex items-center space-x-5 shrink-0">
+      <a href="orders.html" class="text-center text-xs hover:text-primary"><i class="far fa-user text-xl block mb-1"></i>주문조회</a>
+      <div class="relative group cart-wrapper">
+        <a href="cart.html" class="text-center text-xs hover:text-primary block relative"><i class="fas fa-shopping-cart text-xl block mb-1"></i>장바구니<span data-cart-badge class="absolute -top-2 -right-3 bg-primary text-white text-[10px] font-bold rounded-full px-1.5 py-0.5 hidden">0</span></a>
+        <div class="absolute right-0 mt-1 w-80 bg-white shadow-lg p-4 rounded hidden group-hover:block text-sm" data-cart-mini></div>
+      </div>
+      <a href="shop.html" class="bg-primary border border-primary hover:bg-transparent text-white hover:text-primary font-semibold px-4 py-2 rounded-full inline-block">전체상품</a>
+    </div>
+  </div>
+  <!-- Category bar -->
+  <nav class="hidden lg:block border-t border-gray-line">
+    <div class="container mx-auto">
+      <ul class="flex justify-start space-x-8 text-black">
+        <li><a href="shop.html" class="block py-3 font-bold text-primary whitespace-nowrap"><i class="fas fa-bars mr-2"></i>전체상품</a></li>
+        <li><a href="shop.html#joint" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">관절·연골</a></li><li><a href="shop.html#brain" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">두뇌·인지</a></li><li><a href="shop.html#oral" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">구강</a></li><li><a href="shop.html#gut" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">장·소화</a></li><li><a href="shop.html#liver" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">간·활력</a></li><li><a href="shop.html#diet" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">다이어트</a></li><li><a href="shop.html#sleep" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">수면·스트레스</a></li><li><a href="shop.html#etc" class="block py-3 font-semibold hover:text-primary whitespace-nowrap">항산화·면역</a></li>
+        <li class="ml-auto"><a href="index.html#event" class="block py-3 font-semibold hover:text-primary">이벤트</a></li>
+        <li><a href="index.html#notice" class="block py-3 font-semibold hover:text-primary">공지사항</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- Mobile menu -->
+<nav id="mobile-menu-placeholder" class="mobile-menu hidden flex flex-col items-center space-y-8 lg:hidden">
+  <ul class="w-full">
+    <li><a href="index.html" class="font-bold block py-2">홈</a></li>
+    <li><a href="shop.html" class="font-bold block py-2">전체상품</a></li>
+    <li><a href="shop.html#joint" class="font-bold block py-2">관절·연골</a></li><li><a href="shop.html#brain" class="font-bold block py-2">두뇌·인지</a></li><li><a href="shop.html#oral" class="font-bold block py-2">구강</a></li><li><a href="shop.html#gut" class="font-bold block py-2">장·소화</a></li><li><a href="shop.html#liver" class="font-bold block py-2">간·활력</a></li><li><a href="shop.html#diet" class="font-bold block py-2">다이어트</a></li><li><a href="shop.html#sleep" class="font-bold block py-2">수면·스트레스</a></li><li><a href="shop.html#etc" class="font-bold block py-2">항산화·면역</a></li>
+    <li><a href="faq.html" class="font-bold block py-2">고객센터 · FAQ</a></li>
+    <li><a href="contact.html" class="font-bold block py-2">파트너 문의</a></li>
+  </ul>
+  <div class="flex flex-col mt-6 space-y-2 items-center">
+    <a href="cart.html" class="bg-primary text-white border border-primary font-semibold px-4 py-2 rounded-full inline-block min-w-[160px] text-center">장바구니 <span data-cart-badge class="ml-1 bg-white text-primary rounded-full px-2 text-xs hidden">0</span></a>
+    <a href="orders.html" class="border border-primary text-primary font-semibold px-4 py-2 rounded-full inline-block min-w-[160px] text-center">주문조회</a>
+  </div>
+  <form class="w-full flex" action="shop.html" method="get"><input type="text" name="q" class="w-full p-2 border border-gray-line rounded-l" placeholder="상품 검색"><button class="bg-primary text-white px-4 rounded-r"><i class="fas fa-search"></i></button></form>
+</nav><section id="breadcrumbs" class="pt-6 bg-gray-lighter"><div class="container mx-auto"><ul class="flex space-x-2 text-sm pb-6"><li><a href="index.html" class="hover:text-primary">홈</a></li><li>›</li><li class="text-black font-semibold">모델 캐스팅 테스트 (내부용)</li></ul></div></section><section class="py-10"><div class="container mx-auto">
+<div class="bg-yellow-50 border border-yellow-300 text-sm rounded-lg p-3 mb-6"><i class="fas fa-lock text-yellow-600 mr-1"></i> 내부 검토용 페이지입니다(메뉴 미노출). 모든 모델은 실존 인물이 아닌 생성 이미지이며, 실제 모델 캐스팅 방향을 정하기 위한 시안입니다.</div>
+<h1 class="text-3xl font-bold text-black mb-2">메인 모델 캐스팅 테스트</h1>
+<p class="text-sm mb-6">후보를 누르면 메인 슬라이드에 적용된 모습이 위에 보입니다. 의견은 아래 버튼으로 보내주세요.</p>
+<section id="product-slider" class="rounded-lg overflow-hidden mb-6"><div class="main-slider"><div class="swiper-slide light" id="cast-preview"><img src="brand/prod1.jpg" alt=""><div class="swiper-slide-content"><h2 class="text-3xl md:text-6xl font-bold text-black mb-2 md:mb-4">식약처가 인정한 원료를<br>정직한 함량으로</h2><p class="mb-4 text-gray-txt md:text-xl">국내 HACCP 인증 시설 제조 · 전 제품 무료배송</p><span class="bg-primary text-white font-semibold px-5 py-2 rounded-full inline-block">전체상품 보기</span></div></div></div></section>
+<p class="mb-4 text-sm">현재 미리보기: <strong id="cast-name" class="text-black">후보 A</strong> — <span id="cast-tone">50대 · 여배우 캠페인 톤 · 알부민 골드 박스+스틱</span></p>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8"><button type="button" data-i="0" class="cast-th text-left border-2 border-gray-line rounded-lg overflow-hidden hover:border-primary"><img src="brand/prod1.jpg" class="w-full aspect-video object-cover" alt=""><div class="p-3"><p class="font-bold text-black">후보 A</p><p class="text-xs text-gray-txt">50대 · 여배우 캠페인 톤 · 알부민 골드 박스+스틱</p><p class="text-xs text-primary">브랜드 앰버서더형 · 핵심 고객층</p></div></button><button type="button" data-i="1" class="cast-th text-left border-2 border-gray-line rounded-lg overflow-hidden hover:border-primary"><img src="brand/prod3.jpg" class="w-full aspect-video object-cover" alt=""><div class="p-3"><p class="font-bold text-black">후보 B</p><p class="text-xs text-gray-txt">40대 · 글래머러스 톤 · 알부민 스틱</p><p class="text-xs text-primary">프리미엄·안티에이징</p></div></button><button type="button" data-i="2" class="cast-th text-left border-2 border-gray-line rounded-lg overflow-hidden hover:border-primary"><img src="brand/prod2.jpg" class="w-full aspect-video object-cover" alt=""><div class="p-3"><p class="font-bold text-black">후보 C</p><p class="text-xs text-gray-txt">50대 · 남성 배우 톤 · 콘드로이친 박스</p><p class="text-xs text-primary">남성 고객·관절·간</p></div></button><button type="button" data-i="3" class="cast-th text-left border-2 border-gray-line rounded-lg overflow-hidden hover:border-primary"><img src="brand/model1.jpg" class="w-full aspect-video object-cover" alt=""><div class="p-3"><p class="font-bold text-black">후보 D</p><p class="text-xs text-gray-txt">50대 · 우아한 주부 톤 · 주방 (제품 없음)</p><p class="text-xs text-primary">관절·알부민</p></div></button><button type="button" data-i="4" class="cast-th text-left border-2 border-gray-line rounded-lg overflow-hidden hover:border-primary"><img src="brand/model2.jpg" class="w-full aspect-video object-cover" alt=""><div class="p-3"><p class="font-bold text-black">후보 E</p><p class="text-xs text-gray-txt">30대 · 차분한 커리어 톤 (제품 없음)</p><p class="text-xs text-primary">다이어트·수면</p></div></button><button type="button" data-i="5" class="cast-th text-left border-2 border-gray-line rounded-lg overflow-hidden hover:border-primary"><img src="brand/cast4.jpg" class="w-full aspect-video object-cover" alt=""><div class="p-3"><p class="font-bold text-black">후보 F</p><p class="text-xs text-gray-txt">30대 · 상큼한 운동 톤 (제품 없음)</p><p class="text-xs text-primary">다이어트·활력</p></div></button></div>
+<div class="border border-gray-line rounded-lg p-6"><h3 class="font-bold text-black mb-2">의견 보내기</h3><p class="text-sm mb-3">가장 좋은 후보와 이유를 적어 보내주세요. (메일 앱이 열립니다)</p><a id="cast-vote" class="bg-primary text-white font-semibold px-5 py-2 rounded-full inline-block" href="mailto:cs@thefuture-labs.com?subject=%5B%EB%8B%A5%ED%84%B0%EB%B2%A0%EB%8B%9B%20%EB%AA%A8%EB%8D%B8%20%EC%BA%90%EC%8A%A4%ED%8C%85%5D%20%ED%9B%84%EB%B3%B4%20A">이 후보로 의견 보내기</a></div>
+<script>(function(){var C=[{"k": "A", "img": "brand/prod1.jpg", "tone": "50대 · 여배우 캠페인 톤 · 알부민 골드 박스+스틱", "target": "브랜드 앰버서더형 · 핵심 고객층"}, {"k": "B", "img": "brand/prod3.jpg", "tone": "40대 · 글래머러스 톤 · 알부민 스틱", "target": "프리미엄·안티에이징"}, {"k": "C", "img": "brand/prod2.jpg", "tone": "50대 · 남성 배우 톤 · 콘드로이친 박스", "target": "남성 고객·관절·간"}, {"k": "D", "img": "brand/model1.jpg", "tone": "50대 · 우아한 주부 톤 · 주방 (제품 없음)", "target": "관절·알부민"}, {"k": "E", "img": "brand/model2.jpg", "tone": "30대 · 차분한 커리어 톤 (제품 없음)", "target": "다이어트·수면"}, {"k": "F", "img": "brand/cast4.jpg", "tone": "30대 · 상큼한 운동 톤 (제품 없음)", "target": "다이어트·활력"}];var pv=document.getElementById('cast-preview');function sel(i){var c=C[i];pv.querySelector('img').src=c.img;document.getElementById('cast-name').textContent='후보 '+c.k;document.getElementById('cast-tone').textContent=c.tone+' · '+c.target;document.getElementById('cast-vote').href='mailto:cs@thefuture-labs.com?subject='+encodeURIComponent('[닥터베닛 모델 캐스팅] 후보 '+c.k+' — '+c.tone);document.querySelectorAll('.cast-th').forEach(function(b,j){b.classList.toggle('border-primary',j===i);b.classList.toggle('border-gray-line',j!==i)})}document.querySelectorAll('.cast-th').forEach(function(b){b.addEventListener('click',function(){sel(+b.dataset.i)})});sel(0)})();</script></div></section>
+<footer class="border-t border-gray-line mt-10">
+  <div class="container mx-auto px-4 py-10">
+    <div class="flex flex-wrap -mx-4">
+      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+        <h3 class="text-lg font-semibold mb-4 text-black">카테고리</h3>
+        <ul><li class="mb-1"><a href="shop.html#joint" class="hover:text-primary">관절·연골</a></li><li class="mb-1"><a href="shop.html#brain" class="hover:text-primary">두뇌·인지</a></li><li class="mb-1"><a href="shop.html#oral" class="hover:text-primary">구강</a></li><li class="mb-1"><a href="shop.html#gut" class="hover:text-primary">장·소화</a></li><li class="mb-1"><a href="shop.html#liver" class="hover:text-primary">간·활력</a></li><li class="mb-1"><a href="shop.html#diet" class="hover:text-primary">다이어트</a></li><li class="mb-1"><a href="shop.html#sleep" class="hover:text-primary">수면·스트레스</a></li><li class="mb-1"><a href="shop.html#etc" class="hover:text-primary">항산화·면역</a></li></ul>
+      </div>
+      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+        <h3 class="text-lg font-semibold mb-4 text-black">고객 안내</h3>
+        <ul>
+          <li class="mb-1"><a href="faq.html" class="hover:text-primary">자주 묻는 질문</a></li>
+          <li class="mb-1"><a href="terms.html" class="hover:text-primary">배송 · 교환 · 반품 안내</a></li>
+          <li class="mb-1"><a href="orders.html" class="hover:text-primary">주문 조회</a></li>
+          <li class="mb-1"><a href="privacy.html" class="hover:text-primary">개인정보처리방침</a></li>
+          <li class="mb-1"><a href="contact.html" class="hover:text-primary">파트너 · B2B 문의</a></li>
+        </ul>
+      </div>
+      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+        <h3 class="text-lg font-semibold mb-4 text-black">고객센터</h3>
+        <p class="text-2xl font-bold text-black mb-1">070-8919-3743</p>
+        <p class="text-sm mb-2">10:00 ~ 17:00 (점심 12:00 ~ 13:00) · 주말/공휴일 휴무</p>
+        <p class="text-sm mb-4"><a href="mailto:cs@thefuture-labs.com" class="hover:text-primary">cs@thefuture-labs.com</a></p>
+        <h3 class="text-lg font-semibold mb-2 text-black">무통장입금 안내</h3>
+        <p class="text-sm">농협 <strong class="text-black">301-0324-8918-41</strong><br>예금주 : 주식회사 더퓨처랩스</p>
+      </div>
+      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+        <h3 class="text-lg font-semibold mb-4 text-black">SNS · 쇼핑</h3>
+        <ul>
+          <li class="flex items-center mb-2"><img src="assets/images/social_icons/instagram.svg" alt="" class="w-4 h-4 mr-2"><a href="https://www.instagram.com/" target="_blank" rel="noopener" class="hover:text-primary">Instagram</a></li>
+          <li class="flex items-center mb-2"><img src="assets/images/social_icons/youtube.svg" alt="" class="w-4 h-4 mr-2"><a href="https://www.youtube.com/" target="_blank" rel="noopener" class="hover:text-primary">YouTube</a></li>
+          <li class="flex items-center mb-2"><i class="fas fa-shopping-bag text-primary w-4 mr-2"></i><a href="https://www.coupang.com/np/search?q=%EB%8B%A5%ED%84%B0%EB%B2%A0%EB%8B%9B" target="_blank" rel="noopener" class="hover:text-primary">쿠팡에서도 판매 중</a></li>
+        </ul>
+        <h3 class="text-lg font-semibold mt-6 mb-2 text-black">교환 · 반품 주소</h3>
+        <p class="text-sm">경기 용인시 처인구 남사읍 당하로 121, 3층 더퓨처랩스</p>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-lighter border-t border-gray-line">
+    <div class="container mx-auto px-4 py-6 text-xs leading-relaxed">
+      <p class="font-semibold text-black mb-1">주식회사 더퓨처랩스</p>
+      <p>대표 김남영 · 주소 서울특별시 강남구 삼성로 422, 4층 (06185) · 사업자등록번호 406-87-02871 · 통신판매업신고 2023-서울강남-01555 · 개인정보보호책임자 김남영 (cs@thefuture-labs.com)</p>
+      <p class="mt-1">고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰의 구매안전 서비스를 이용하실 수 있습니다. 건강기능식품은 질병의 예방 및 치료를 위한 의약품이 아닙니다.</p>
+      <p class="mt-2">© 닥터베닛 · 주식회사 더퓨처랩스. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+<script src="assets/js/script.js"></script>
+</body></html>
