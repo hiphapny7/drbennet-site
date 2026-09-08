@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /cart.html
+Disallow: /checkout.html
+Disallow: /order-complete.html
+Disallow: /orders.html
+Disallow: /casting.html
+Sitemap: https://hiphapny7.github.io/drbennet-site/sitemap.xml
